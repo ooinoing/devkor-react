@@ -25,6 +25,7 @@ const Board = ()=>{
       [0,4,8],
       [2,4,6]
     ];
+    // 이겼는지 체크
     for(let i=0; i<winningCase.length; ++i){
       const [a,b,c] = winningCase[i];
       if (squares[a] != "" && squares[a]===squares[b] && squares[b]===squares[c]) 
@@ -99,7 +100,6 @@ const Board = ()=>{
   );
 
 }
-
 
 const Game = () => {
   return (
